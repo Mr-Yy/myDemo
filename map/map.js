@@ -1,8 +1,8 @@
 /**
  * map.js
- * @authors Your Name (you@example.org)
+ * @authors yanxinyu
  * @date    2015-05-21 10:18:00
- * @version $Id$
+ * @version 1.0
  */
 
 window.onload = myMap;
