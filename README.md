@@ -9,5 +9,7 @@
 ### select
 简单的select多级联动
 
+### 3dlist
+3d滚动效果的列表
 ---
 by yanxinyu
