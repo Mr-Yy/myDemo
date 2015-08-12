@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <title>2048</title>
+    <link href="2048.css" rel="stylesheet">
+</head>
+
+<body ms-controller="game">
+    <div class="game-container" id="container">
+        <h1>2048</h1>
+        <div class="game-wrap" ms-on-swipeleft="moveLeft" ms-on-swiperight="moveRight" ms-on-swipeup="moveUp" ms-on-swipedown="moveDown">
+            <div ms-repeat="arr" class="game-item">
+                <p ms-repeat="el" class="number" ms-css-background="{{getColor(el)}}">{{el}}</p>
+            </div>
+        </div>
+        <p class="score">移动次数：{{attrs.step}}</p>
+    </div>
+    <button class="restart" ms-on-tap="restart">重置</button>
+    <script src="avalon.mobile.min.js"></script>
+    <script src="2048.js"></script>
+</body>
+
+</html>
